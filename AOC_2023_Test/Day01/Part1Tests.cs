@@ -1,6 +1,5 @@
 using AOC_2023_Service.Day1;
 using System.Collections;
-using System.Reflection;
 
 namespace AOC_2023_Test.Day1
 {
