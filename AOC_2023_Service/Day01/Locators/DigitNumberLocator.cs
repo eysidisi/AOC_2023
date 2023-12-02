@@ -1,32 +1,28 @@
-﻿
+﻿using AOC_2023_Service.Day1.NumericPairs;
 
-namespace AOC_2023_Service.Day1
+namespace AOC_2023_Service.Day1.Locators
 {
-    internal class IntDigitFinder
+    public static class DigitNumberLocator
     {
-        public IntDigitFinder()
-        {
-        }
-
-        public NumberAndIndex? FindFirstNumber(string str)
+        public static NumberIndexPair? FindFirstNumber(string str)
         {
             var result = str
                 .Select((ch, i) => new { Char = ch, Index = i })
                 .FirstOrDefault(item => char.IsDigit(item.Char));
 
             return result != null
-                ? new NumberAndIndex(int.Parse(result.Char.ToString()), result.Index)
+                ? new NumberIndexPair(int.Parse(result.Char.ToString()), result.Index)
                 : null;
         }
 
-        public NumberAndIndex? FindLastNumber(string str)
+        public static NumberIndexPair? FindLastNumber(string str)
         {
             var result = str
                 .Select((ch, i) => new { Char = ch, Index = i })
                 .LastOrDefault(item => char.IsDigit(item.Char));
 
             return result != null
-                ? new NumberAndIndex(int.Parse(result.Char.ToString()), result.Index)
+                ? new NumberIndexPair(int.Parse(result.Char.ToString()), result.Index)
                 : null;
         }
     }

@@ -12,13 +12,5 @@ namespace AOC_2023_Service.Day1
         public IncorrectInputException(string? message) : base(message)
         {
         }
-
-        public IncorrectInputException(string? message, Exception? innerException) : base(message, innerException)
-        {
-        }
-
-        protected IncorrectInputException(SerializationInfo info, StreamingContext context) : base(info, context)
-        {
-        }
     }
 }
