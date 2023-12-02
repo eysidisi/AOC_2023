@@ -4,11 +4,11 @@ using System.Reflection;
 
 namespace AOC_2023_Test.Day1
 {
-    public class Day1Tests
+    public class Part1Tests
     {
         private readonly CalibrationDocument calibrationDocument;
 
-        public Day1Tests()
+        public Part1Tests()
         {
             calibrationDocument = new CalibrationDocument();
         }
@@ -19,12 +19,12 @@ namespace AOC_2023_Test.Day1
         {
             if (expectedOutput >= 0)
             {
-                int actualResult = calibrationDocument.FindTotalCalibrationValue(input);
+                int actualResult = calibrationDocument.FindTotalCalibrationValueV1(input);
                 Assert.Equal(expectedOutput, actualResult);
             }
             else
             {
-                Assert.Throws<IncorrectInputException>(() => calibrationDocument.FindTotalCalibrationValue(input));
+                Assert.Throws<IncorrectInputException>(() => calibrationDocument.FindTotalCalibrationValueV1(input));
             }
         }
 
@@ -34,12 +34,12 @@ namespace AOC_2023_Test.Day1
         {
             if (expectedOutput >= 0)
             {
-                int actualResult = calibrationDocument.FindTotalCalibrationValue(input);
+                int actualResult = calibrationDocument.FindTotalCalibrationValueV1(input);
                 Assert.Equal(expectedOutput, actualResult);
             }
             else
             {
-                Assert.Throws<IncorrectInputException>(() => calibrationDocument.FindTotalCalibrationValue(input));
+                Assert.Throws<IncorrectInputException>(() => calibrationDocument.FindTotalCalibrationValueV1(input));
             }
         }
 
@@ -48,7 +48,7 @@ namespace AOC_2023_Test.Day1
         {
             string filePath = Path.Combine(AppContext.BaseDirectory, "Day1/Input_1.txt");
             var fileContents = File.ReadAllLines(filePath).ToList();
-            var actualResult = calibrationDocument.FindTotalCalibrationValue(fileContents);
+            var actualResult = calibrationDocument.FindTotalCalibrationValueV1(fileContents);
 
             Assert.Equal(53921, actualResult);
         }
