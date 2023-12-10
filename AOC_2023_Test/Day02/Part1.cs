@@ -5,7 +5,7 @@ using Xunit;
 
 namespace AOC_2023_Test.Day02
 {
-    public class RoundTests
+    public class Part1
     {
         [Fact]
         public void EmptyBag_NonEmptyRound_ShouldBeFalse()

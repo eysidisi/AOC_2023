@@ -1,4 +1,4 @@
-﻿namespace AOC_2023_Service.Day1.NumericPairs
+﻿namespace AOC_2023_Service.Day01.NumericPairs
 {
     public class NumberIndexPair
     {

@@ -5,7 +5,7 @@
         public string Color { get; }
         public int Count { get; }
 
-        private BallSpecification(string color, int count)
+        public BallSpecification(string color, int count)
         {
             Color = color;
             Count = count;

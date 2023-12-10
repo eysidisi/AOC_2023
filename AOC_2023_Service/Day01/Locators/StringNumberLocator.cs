@@ -1,6 +1,6 @@
-﻿using AOC_2023_Service.Day1.NumericPairs;
+﻿using AOC_2023_Service.Day01.NumericPairs;
 
-namespace AOC_2023_Service.Day1.Locators
+namespace AOC_2023_Service.Day01.Locators
 {
     public static class StringNumberLocator
     {

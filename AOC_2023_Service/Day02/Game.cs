@@ -3,6 +3,7 @@
     public class Game
     {
         private readonly List<BallContainer> rounds;
+        public IReadOnlyList<BallContainer> Rounds => rounds;
 
         public Game(string gameStr)
         {

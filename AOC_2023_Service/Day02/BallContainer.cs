@@ -4,6 +4,8 @@ namespace AOC_2023_Service.Day02
     public class BallContainer
     {
         private List<BallSpecification> colorToNumbers;
+        public IReadOnlyList<BallSpecification> ColorToNumbers => colorToNumbers;
+
 
         public BallContainer()
         {

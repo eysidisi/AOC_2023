@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace AOC_2023_Service.Day1
+namespace AOC_2023_Service.Day01
 {
     [Serializable]
     public class IncorrectInputException : Exception

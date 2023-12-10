@@ -1,14 +1,13 @@
-using AOC_2023_Service.Day1;
+using AOC_2023_Service.Day01;
 using System.Collections;
-using System.Reflection;
 
-namespace AOC_2023_Test.Day1
+namespace AOC_2023_Test.Day01
 {
-    public class Part2Tests
+    public class Part2
     {
         private readonly CalibrationDocument calibrationDocument;
 
-        public Part2Tests()
+        public Part2()
         {
             calibrationDocument = new CalibrationDocument();
         }
